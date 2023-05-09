@@ -13,6 +13,8 @@
 		C400A0C42A0A810800D2FBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C400A0C22A0A810800D2FBEC /* Main.storyboard */; };
 		C400A0C62A0A810C00D2FBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C400A0C52A0A810C00D2FBEC /* Assets.xcassets */; };
 		C400A0C92A0A810C00D2FBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C400A0C72A0A810C00D2FBEC /* LaunchScreen.storyboard */; };
+		C400A0D72A0A85DC00D2FBEC /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0D62A0A85DC00D2FBEC /* Coin.swift */; };
+		C400A0D92A0A860800D2FBEC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0D82A0A860800D2FBEC /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C400A0C52A0A810C00D2FBEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C400A0C82A0A810C00D2FBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C400A0CA2A0A810C00D2FBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C400A0D62A0A85DC00D2FBEC /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		C400A0D82A0A860800D2FBEC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		C400A0BB2A0A810800D2FBEC /* CoinGesckoAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C400A0BC2A0A810800D2FBEC /* AppDelegate.swift */,
-				C400A0BE2A0A810800D2FBEC /* SceneDelegate.swift */,
-				C400A0C02A0A810800D2FBEC /* ViewController.swift */,
-				C400A0C22A0A810800D2FBEC /* Main.storyboard */,
-				C400A0C52A0A810C00D2FBEC /* Assets.xcassets */,
-				C400A0C72A0A810C00D2FBEC /* LaunchScreen.storyboard */,
-				C400A0CA2A0A810C00D2FBEC /* Info.plist */,
+				C400A0D52A0A85CC00D2FBEC /* Models */,
+				C400A0D22A0A847700D2FBEC /* Storyboards */,
+				C400A0D32A0A848500D2FBEC /* ViewControllers */,
+				C400A0D42A0A85AE00D2FBEC /* Services */,
+				C400A0D02A0A843400D2FBEC /* App */,
+				C400A0D12A0A844600D2FBEC /* Resources */,
 			);
 			path = CoinGesckoAPI;
+			sourceTree = "<group>";
+		};
+		C400A0D02A0A843400D2FBEC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C400A0BC2A0A810800D2FBEC /* AppDelegate.swift */,
+				C400A0BE2A0A810800D2FBEC /* SceneDelegate.swift */,
+				C400A0CA2A0A810C00D2FBEC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C400A0D12A0A844600D2FBEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C400A0C52A0A810C00D2FBEC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C400A0D22A0A847700D2FBEC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C400A0C22A0A810800D2FBEC /* Main.storyboard */,
+				C400A0C72A0A810C00D2FBEC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C400A0D32A0A848500D2FBEC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C400A0C02A0A810800D2FBEC /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C400A0D42A0A85AE00D2FBEC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C400A0D82A0A860800D2FBEC /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C400A0D52A0A85CC00D2FBEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C400A0D62A0A85DC00D2FBEC /* Coin.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +194,8 @@
 			files = (
 				C400A0C12A0A810800D2FBEC /* ViewController.swift in Sources */,
 				C400A0BD2A0A810800D2FBEC /* AppDelegate.swift in Sources */,
+				C400A0D92A0A860800D2FBEC /* NetworkManager.swift in Sources */,
+				C400A0D72A0A85DC00D2FBEC /* Coin.swift in Sources */,
 				C400A0BF2A0A810800D2FBEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +345,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 848LVZR9JB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoinGesckoAPI/Info.plist;
+				INFOPLIST_FILE = CoinGesckoAPI/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +359,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Iaroslav-Beldin.CoinGesckoAPI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +377,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 848LVZR9JB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoinGesckoAPI/Info.plist;
+				INFOPLIST_FILE = CoinGesckoAPI/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +391,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Iaroslav-Beldin.CoinGesckoAPI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
