@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  CoinGesckoAPI
 //
 //  Created by Iaroslav Beldin on 09.05.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class MainViewController: UITableViewController {
     
     private let networkManager = NetworkManager.shared
 
@@ -18,7 +18,7 @@ final class ViewController: UIViewController {
 }
 
 // MARK: - Networking
-extension ViewController {
+extension MainViewController {
     private func fetchCoins() {
         networkManager.fetch([Coin].self, from: Link.coinsCategories.url) { result in
             switch result {
