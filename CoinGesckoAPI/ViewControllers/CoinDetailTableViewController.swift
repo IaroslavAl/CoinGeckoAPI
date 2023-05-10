@@ -68,7 +68,7 @@ final class CoinDetailTableViewController: UITableViewController {
         case 5:
             cell.secondTextLabel.text = "$\(removeZeros(coin.low24H, decimalNumbers: 8, minimumFractionDigits: 2))"
         case 6:
-            cell.secondTextLabel.text = "$\(removeZeros(coin.circulatingSupply))"
+            cell.secondTextLabel.text = "\(removeZeros(coin.circulatingSupply))"
         case 7:
             if let totalSupply = coin.totalSupply {
                 cell.secondTextLabel.text = "\(removeZeros(totalSupply))"
