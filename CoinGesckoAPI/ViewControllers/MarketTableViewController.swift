@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  MarketTableViewController.swift
 //  CoinGesckoAPI
 //
 //  Created by Iaroslav Beldin on 09.05.2023.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class MainViewController: UITableViewController {
+final class MarketTableViewController: UITableViewController {
     
     private let networkManager = NetworkManager.shared
     private var coins: [Coin] = []
-    private var loadedCoins: [Coin] = []
+    private var imageData: Data!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,19 @@ final class MainViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         overrideUserInterfaceStyle = .dark
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let coinDetailVC = segue.destination as? CoinDetailTableViewController else { return }
+            coinDetailVC.coin = coins[indexPath.row]
+            if let cell = tableView.cellForRow(at: indexPath) as? CoinCell {
+                coinDetailVC.image = cell.image
+            }
+        } else if let coinSearchVC = segue.destination as? CoinSearchTableViewController {
+            coinSearchVC.coins = coins
+        }
     }
     
     // MARK: - Table view data source
@@ -38,9 +51,9 @@ final class MainViewController: UITableViewController {
 }
 
 // MARK: - Networking
-extension MainViewController {
+extension MarketTableViewController {
     private func fetchCoins() {
-        networkManager.fetch([Coin].self, from: Link.coinsCategories.url) { [weak self] result in
+        networkManager.fetchCoins(from: Link.coinsCategories.url) { [weak self] result in
             switch result {
             case .success(let coins):
                 self?.coins = coins

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C400A0BD2A0A810800D2FBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0BC2A0A810800D2FBEC /* AppDelegate.swift */; };
 		C400A0BF2A0A810800D2FBEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0BE2A0A810800D2FBEC /* SceneDelegate.swift */; };
-		C400A0C12A0A810800D2FBEC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0C02A0A810800D2FBEC /* MainViewController.swift */; };
+		C400A0C12A0A810800D2FBEC /* MarketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0C02A0A810800D2FBEC /* MarketTableViewController.swift */; };
 		C400A0C42A0A810800D2FBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C400A0C22A0A810800D2FBEC /* Main.storyboard */; };
 		C400A0C62A0A810C00D2FBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C400A0C52A0A810C00D2FBEC /* Assets.xcassets */; };
 		C400A0C92A0A810C00D2FBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C400A0C72A0A810C00D2FBEC /* LaunchScreen.storyboard */; };
@@ -18,13 +18,17 @@
 		C400A0DE2A0AB42A00D2FBEC /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0DD2A0AB42A00D2FBEC /* CoinCell.swift */; };
 		C400A0E02A0AFBB200D2FBEC /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0DF2A0AFBB100D2FBEC /* NavigationViewController.swift */; };
 		C400A0E22A0AFC2A00D2FBEC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400A0E12A0AFC2A00D2FBEC /* TabBarViewController.swift */; };
+		C42DEFBB2A0B4D520090AF96 /* CoinDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42DEFBA2A0B4D520090AF96 /* CoinDetailCell.swift */; };
+		C42DEFBD2A0B4EFC0090AF96 /* CoinDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42DEFBC2A0B4EFC0090AF96 /* CoinDetailTableViewController.swift */; };
+		C42DEFBF2A0BB2780090AF96 /* SearchCoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42DEFBE2A0BB2780090AF96 /* SearchCoinCell.swift */; };
+		C42DEFC12A0BB88A0090AF96 /* CoinSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42DEFC02A0BB88A0090AF96 /* CoinSearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C400A0B92A0A810800D2FBEC /* CoinGesckoAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinGesckoAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C400A0B92A0A810800D2FBEC /* CoinGeckoAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinGeckoAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C400A0BC2A0A810800D2FBEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C400A0BE2A0A810800D2FBEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C400A0C02A0A810800D2FBEC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C400A0C02A0A810800D2FBEC /* MarketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewController.swift; sourceTree = "<group>"; };
 		C400A0C32A0A810800D2FBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C400A0C52A0A810C00D2FBEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C400A0C82A0A810C00D2FBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +38,10 @@
 		C400A0DD2A0AB42A00D2FBEC /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
 		C400A0DF2A0AFBB100D2FBEC /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		C400A0E12A0AFC2A00D2FBEC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C42DEFBA2A0B4D520090AF96 /* CoinDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailCell.swift; sourceTree = "<group>"; };
+		C42DEFBC2A0B4EFC0090AF96 /* CoinDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailTableViewController.swift; sourceTree = "<group>"; };
+		C42DEFBE2A0BB2780090AF96 /* SearchCoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoinCell.swift; sourceTree = "<group>"; };
+		C42DEFC02A0BB88A0090AF96 /* CoinSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,7 @@
 		C400A0BA2A0A810800D2FBEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C400A0B92A0A810800D2FBEC /* CoinGesckoAPI.app */,
+				C400A0B92A0A810800D2FBEC /* CoinGeckoAPI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +117,9 @@
 			children = (
 				C400A0E12A0AFC2A00D2FBEC /* TabBarViewController.swift */,
 				C400A0DF2A0AFBB100D2FBEC /* NavigationViewController.swift */,
-				C400A0C02A0A810800D2FBEC /* MainViewController.swift */,
+				C400A0C02A0A810800D2FBEC /* MarketTableViewController.swift */,
+				C42DEFBC2A0B4EFC0090AF96 /* CoinDetailTableViewController.swift */,
+				C42DEFC02A0BB88A0090AF96 /* CoinSearchTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -134,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				C400A0DD2A0AB42A00D2FBEC /* CoinCell.swift */,
+				C42DEFBA2A0B4D520090AF96 /* CoinDetailCell.swift */,
+				C42DEFBE2A0BB2780090AF96 /* SearchCoinCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C400A0B82A0A810800D2FBEC /* CoinGesckoAPI */ = {
+		C400A0B82A0A810800D2FBEC /* CoinGeckoAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C400A0CD2A0A810C00D2FBEC /* Build configuration list for PBXNativeTarget "CoinGesckoAPI" */;
+			buildConfigurationList = C400A0CD2A0A810C00D2FBEC /* Build configuration list for PBXNativeTarget "CoinGeckoAPI" */;
 			buildPhases = (
 				C400A0B52A0A810800D2FBEC /* Sources */,
 				C400A0B62A0A810800D2FBEC /* Frameworks */,
@@ -153,9 +165,9 @@
 			);
 			dependencies = (
 			);
-			name = CoinGesckoAPI;
+			name = CoinGeckoAPI;
 			productName = CoinGesckoAPI;
-			productReference = C400A0B92A0A810800D2FBEC /* CoinGesckoAPI.app */;
+			productReference = C400A0B92A0A810800D2FBEC /* CoinGeckoAPI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C400A0B42A0A810800D2FBEC /* Build configuration list for PBXProject "CoinGesckoAPI" */;
+			buildConfigurationList = C400A0B42A0A810800D2FBEC /* Build configuration list for PBXProject "CoinGeckoAPI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -186,7 +198,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C400A0B82A0A810800D2FBEC /* CoinGesckoAPI */,
+				C400A0B82A0A810800D2FBEC /* CoinGeckoAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -209,11 +221,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42DEFBD2A0B4EFC0090AF96 /* CoinDetailTableViewController.swift in Sources */,
+				C42DEFBB2A0B4D520090AF96 /* CoinDetailCell.swift in Sources */,
 				C400A0E22A0AFC2A00D2FBEC /* TabBarViewController.swift in Sources */,
 				C400A0DE2A0AB42A00D2FBEC /* CoinCell.swift in Sources */,
-				C400A0C12A0A810800D2FBEC /* MainViewController.swift in Sources */,
+				C42DEFC12A0BB88A0090AF96 /* CoinSearchTableViewController.swift in Sources */,
+				C400A0C12A0A810800D2FBEC /* MarketTableViewController.swift in Sources */,
 				C400A0BD2A0A810800D2FBEC /* AppDelegate.swift in Sources */,
 				C400A0D92A0A860800D2FBEC /* NetworkManager.swift in Sources */,
+				C42DEFBF2A0BB2780090AF96 /* SearchCoinCell.swift in Sources */,
 				C400A0D72A0A85DC00D2FBEC /* Coin.swift in Sources */,
 				C400A0E02A0AFBB200D2FBEC /* NavigationViewController.swift in Sources */,
 				C400A0BF2A0A810800D2FBEC /* SceneDelegate.swift in Sources */,
@@ -423,7 +439,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C400A0B42A0A810800D2FBEC /* Build configuration list for PBXProject "CoinGesckoAPI" */ = {
+		C400A0B42A0A810800D2FBEC /* Build configuration list for PBXProject "CoinGeckoAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C400A0CB2A0A810C00D2FBEC /* Debug */,
@@ -432,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C400A0CD2A0A810C00D2FBEC /* Build configuration list for PBXNativeTarget "CoinGesckoAPI" */ = {
+		C400A0CD2A0A810C00D2FBEC /* Build configuration list for PBXNativeTarget "CoinGeckoAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C400A0CE2A0A810C00D2FBEC /* Debug */,
