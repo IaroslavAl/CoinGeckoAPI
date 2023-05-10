@@ -382,15 +382,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="sha-R0-qUT">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="TjU-i5-4CZ">
-                            <rect key="frame" x="160" y="25" width="0.0" height="0.0"/>
+                        <view key="titleView" contentMode="scaleToFill" id="pUg-gZ-tht">
+                            <rect key="frame" x="119" y="7" width="82" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8hC-BV-uQ1">
-                                    <rect key="frame" x="0.0" y="0.0" width="81.5" height="20.5"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8hC-BV-uQ1">
+                                    <rect key="frame" x="0.0" y="-1" width="81.5" height="30"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GIF-Sy-i7w">
-                                            <rect key="frame" x="0.0" y="1" width="30" height="18"/>
+                                            <rect key="frame" x="0.0" y="1" width="30" height="27.5"/>
                                             <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="orW-z2-Vvh"/>
@@ -398,7 +398,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-pe-JA3">
-                                            <rect key="frame" x="38" y="0.0" width="43.5" height="20.5"/>
+                                            <rect key="frame" x="38" y="0.0" width="43.5" height="30"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -407,12 +407,6 @@
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstItem="8hC-BV-uQ1" firstAttribute="leading" secondItem="TjU-i5-4CZ" secondAttribute="leading" id="0TP-W0-0YE"/>
-                                <constraint firstAttribute="trailing" secondItem="8hC-BV-uQ1" secondAttribute="trailing" id="Uqz-dJ-2fN"/>
-                                <constraint firstItem="8hC-BV-uQ1" firstAttribute="top" secondItem="TjU-i5-4CZ" secondAttribute="top" id="vPG-5U-iSl"/>
-                                <constraint firstAttribute="bottom" secondItem="8hC-BV-uQ1" secondAttribute="bottom" id="waq-fn-uzQ"/>
-                            </constraints>
                         </view>
                     </navigationItem>
                     <connections>
