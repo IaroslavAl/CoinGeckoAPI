@@ -26,6 +26,7 @@ enum NetworkError: Error {
 
 final class NetworkManager {
     static let shared = NetworkManager()
+    private init() {}
     
     func fetchImage(from url: URL, completion: @escaping (Result<Data, NetworkError>) -> Void) {
         DispatchQueue.global().async {
@@ -61,6 +62,4 @@ final class NetworkManager {
         }.resume()
         
     }
-    
-    private init() {}
 }

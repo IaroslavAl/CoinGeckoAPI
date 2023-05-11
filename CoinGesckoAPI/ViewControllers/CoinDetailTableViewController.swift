@@ -41,7 +41,7 @@ final class CoinDetailTableViewController: UITableViewController {
         overrideUserInterfaceStyle = .dark
     }
     
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         properties.count
     }
@@ -87,6 +87,11 @@ final class CoinDetailTableViewController: UITableViewController {
         
         cell.propertyLabel.text = properties[indexPath.row]
         return cell
+    }
+    
+    // MARK: - UITableViewDelegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     private func removeZeros(_ double: Double, decimalNumbers: Int? = nil, minimumFractionDigits: Int? = nil) -> String {
